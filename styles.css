@@ -1,0 +1,60 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, cyan, red); /* Cyan to red gradient */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Title Outside Scrollable Window */
+.title {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 20px;
+    font-size: 2em;
+    background: transparent;
+    color: #fff;
+    z-index: 1000;
+}
+
+/* Scrollable Quiz Container */
+.quiz-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 600px;
+    max-height: 70vh;
+    overflow-y: auto;
+    margin-top: 80px;
+}
+
+/* Styling for quiz items */
+.quiz-item {
+    margin-bottom: 20px;
+}
+
+/* Submit button */
+.submit-btn {
+    background-color: #0072bb;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
